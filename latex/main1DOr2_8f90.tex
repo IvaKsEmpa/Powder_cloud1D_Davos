@@ -1,0 +1,300 @@
+\hypertarget{main1DOr2_8f90}{}\section{src/main1\+D\+Or2.f90 File Reference}
+\label{main1DOr2_8f90}\index{src/main1\+D\+Or2.\+f90@{src/main1\+D\+Or2.\+f90}}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespaceprecisions}{precisions}}
+\item 
+module \mbox{\hyperlink{namespaceglobalparam}{globalparam}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+program \mbox{\hyperlink{main1DOr2_8f90_a8712173bc20143ca5b1b8cbd782b563e}{code2d}}
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_a86edd837bdc9a015ebd8a46212fe70ab}{hllc\+\_\+x\+\_\+sub1}} (prim, flux, pente, cons, it, dt)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_aec66a1d113ade1d60ad864482ea8e4cf}{godunov\+\_\+x\+\_\+sub1}} (cons, flux, dt, dx)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_a8a5b072c001df1496416cc96562c9916}{putonscreen}} ()
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_a47ac97fd58c2f9695ffff2ee98d498c1}{ecriture\+\_\+donnees}} (X, Prim, Ein, Pression, time, DX, U1, Lx, Qaverage)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_a62516b42ea4fb4c0918eb7e43982d4a8}{lecture\+\_\+donnees}} (Lx)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_a2ab28d5afcb8110dd4d60685348cb3d3}{initialisation}} (DX, X, Prim, S\+O\+U\+N\+D\+\_\+ax, Ein, C\+O\+NS, Pression, Lx)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_aa208014933dc346cd26290f44b072d66}{nouvell\+\_\+variable\+\_\+prim}} (Prim, Ein, S\+O\+U\+N\+D\+\_\+ax, C\+O\+NS, Pression, it)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_ae72ce7fe5060af7e7c56122d5232f6c3}{condition\+\_\+lim\+\_\+box}} (Prim, Ein, Pression, S\+O\+U\+N\+D\+\_\+ax)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_abf21f0faeed0f3974f34fb740d77af75}{condlimabsorption}} (Prim, Ein, Pression, S\+O\+U\+N\+D\+\_\+ax)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_a9a3d7ad4173d691f4f090f6c4c4e05b3}{powder}} (Prim, Ein, Pression, S\+O\+U\+N\+D\+\_\+ax)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_ab89119a8e79210de76ccde93ce834633}{condition\+\_\+lim\+\_\+batteur}} (Prim, Ein, Pression, S\+O\+U\+N\+D\+\_\+ax, T\+I\+ME)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_a61ef0ae28fb906748d601350a093a3fa}{euler\+\_\+method}} (DT, time, X, C\+O\+NS, Prim, Ein, S\+O\+U\+N\+D\+\_\+ax, Pression, it, U1, Qaverage)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_abf018793b221c901580957ed90346b9d}{rk2}} (DT, C\+O\+NS, Prim, Ein, S\+O\+U\+N\+D\+\_\+ax, Pression, it, U1)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_ab1369821f897b816d4e9a8f6740ea693}{pente1\+\_\+x}} (Prim, P\+E\+N\+TE)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_af50a25d9d5f073c1347e643d589770ac}{vleer}} (s1, s2, slim)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_a782814db45b1ac79c2d169964b28fd07}{minmod}} (s1, s2, slim)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_a1584e44687072629ab256df4b8fe6537}{superbee}} (s1, s2, slim)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_ac6b2b51b381114cb3bc7fa9abc69dee7}{valbada}} (s1, s2, slim)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_a236c2f231e6eabfc3ddff4bc2f56bb99}{vmc}} (s1, s2, slim)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_a1054c20993438d4f9ef5cc742a3245b4}{prim\+\_\+to\+\_\+cons\+\_\+flux\+\_\+sub1x}} (Prim, Ein, Pression, C\+O\+NS, F\+L\+UX)
+\item 
+subroutine \mbox{\hyperlink{main1DOr2_8f90_a41f5497b85eecbbc6af40d3959e67a3d}{cons\+\_\+prediction\+\_\+sub1x}} (DX, DT, C\+O\+NS, C\+O\+N\+S\+\_\+\+P\+R\+ED, F\+L\+U\+X\+GG, F\+L\+U\+X\+DD)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespaceprecisions_a981a5ffa163c939af460d31f0e46fdab}{precisions\+::dp}} =kind(1.\+0d0)
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_a877f19a98e7a5d2d29ccb999f6a4b30b}{globalparam\+::impree}}
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_ac4d90a4b214d99ef729a938064face25}{globalparam\+::impref}}
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_a09fefe9eafe1d81a6be970794c775e36}{globalparam\+::nv\+\_\+prim}}
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_a0f36e5940fffe44f73fbab54574ce74d}{globalparam\+::argunit}} = 6
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_a41b8aacbc46aa9d8341860c8a0481a44}{globalparam\+::isave}}
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_abf663bfec615f440c89cb9f1edf516cf}{globalparam\+::pentex}}
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_a3d0778a63b55337acd79aa06b9030ad0}{globalparam\+::nx}}
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_a823f2901e26e8ed4b22569b63173f812}{globalparam\+::iterfinal}}
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_a0dfd817bc37d123c49006e2b980414c5}{globalparam\+::cond\+\_\+lim}}
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_a6a8f3df273709fb8e343e4443306d527}{globalparam\+::method\+\_\+source\+\_\+term}}
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_a46daf38606bdbc2d5b4a2864c28cae5e}{globalparam\+::h\+\_\+pv}}
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_acbf50879a37a52fcc5fc5e0f06b209ba}{globalparam\+::u\+\_\+pv}}
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_af964c2be0abbbecddbc35227f114fad2}{globalparam\+::phi\+\_\+pv}}
+\item 
+integer \mbox{\hyperlink{namespaceglobalparam_afcc135157423c01c0db73b3f23a35616}{globalparam\+::hp\+\_\+pv}}
+\item 
+real(kind=dp) \mbox{\hyperlink{namespaceglobalparam_a9e5d836cf78ed835befb0354a98e7e17}{globalparam\+::x0}}
+\item 
+real(kind=dp) \mbox{\hyperlink{namespaceglobalparam_afa512f0663f1649ec948dd8629ded9c2}{globalparam\+::h\+\_\+0}}
+\item 
+real(kind=dp) \mbox{\hyperlink{namespaceglobalparam_ad4de2aae56528f5e68832e367c812b7e}{globalparam\+::amplitude}}
+\item 
+real(kind=dp) \mbox{\hyperlink{namespaceglobalparam_a3d60c54a7f29c018175090d8f352e532}{globalparam\+::frottcoeff}}
+\item 
+real(kind=dp) \mbox{\hyperlink{namespaceglobalparam_a2b80e7d2d9fedcf41afb3a695951758b}{globalparam\+::disscoeff}}
+\item 
+real(kind=dp) \mbox{\hyperlink{namespaceglobalparam_adfd0d04d365d8eea624298b512502b3a}{globalparam\+::cfl}}
+\item 
+real(kind=dp) \mbox{\hyperlink{namespaceglobalparam_a10139a2787968ad3cf07f503ad8dd164}{globalparam\+::timeout}}
+\item 
+real(kind=dp) \mbox{\hyperlink{namespaceglobalparam_aedbaf94b837b9fa76dfe9fb6d99b21b4}{globalparam\+::period\+\_\+time}}
+\item 
+real(kind=dp) \mbox{\hyperlink{namespaceglobalparam_af8b4334cb676810d60c0e1a746531412}{globalparam\+::pi}}
+\item 
+real(kind=dp) \mbox{\hyperlink{namespaceglobalparam_afc46f9587744d04e67298c60303cd5f0}{globalparam\+::angle}}
+\item 
+real(kind=dp) \mbox{\hyperlink{namespaceglobalparam_a5ea70464e51d2dc580f4c6c8b451cb01}{globalparam\+::g}}
+\item 
+real(kind=dp) \mbox{\hyperlink{namespaceglobalparam_a7e2e3cc9c0b15b0250b31dd03fb704c6}{globalparam\+::phi2}}
+\item 
+real(kind=dp), parameter \mbox{\hyperlink{namespaceglobalparam_a50294033ac3a178743643d3203a2d364}{globalparam\+::eps}} = 1.d-\/8
+\item 
+real(kind=dp), parameter \mbox{\hyperlink{namespaceglobalparam_a1c7a6cb7b83fcf9d8d91ed682e3f332d}{globalparam\+::rhoair}} = 1.\+3d0
+\item 
+real(kind=dp), parameter \mbox{\hyperlink{namespaceglobalparam_a81ffdb6e04df75fd95fe27a7fffc1328}{globalparam\+::rhosnow}} =10.d0
+\item 
+real(kind=dp), parameter \mbox{\hyperlink{namespaceglobalparam_abc246d4846a0210b41718b0d3cc67dc0}{globalparam\+::injection\+\_\+speed}} = 35.d0
+\item 
+real(kind=dp), parameter \mbox{\hyperlink{namespaceglobalparam_a241102bcabaffc164f5d5bb9dcd1f2d8}{globalparam\+::injection\+\_\+density}} = 7.d0
+\item 
+real(kind=dp), parameter \mbox{\hyperlink{namespaceglobalparam_a6c7de558883b37c3d3e5e7b55250ed99}{globalparam\+::rhopowder}} =10.D0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{main1DOr2_8f90_a8712173bc20143ca5b1b8cbd782b563e}\label{main1DOr2_8f90_a8712173bc20143ca5b1b8cbd782b563e}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!code2d@{code2d}}
+\index{code2d@{code2d}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{code2d()}{code2d()}}
+{\footnotesize\ttfamily program code2d (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main1DOr2_8f90_a8712173bc20143ca5b1b8cbd782b563e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main1DOr2_8f90_ab89119a8e79210de76ccde93ce834633}\label{main1DOr2_8f90_ab89119a8e79210de76ccde93ce834633}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!condition\+\_\+lim\+\_\+batteur@{condition\+\_\+lim\+\_\+batteur}}
+\index{condition\+\_\+lim\+\_\+batteur@{condition\+\_\+lim\+\_\+batteur}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{condition\+\_\+lim\+\_\+batteur()}{condition\_lim\_batteur()}}
+{\footnotesize\ttfamily subroutine code2d\+::condition\+\_\+lim\+\_\+batteur (\begin{DoxyParamCaption}\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx+1)}]{Prim,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Ein,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Pression,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{S\+O\+U\+N\+D\+\_\+ax,  }\item[{real (kind = dp)}]{T\+I\+ME }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_ae72ce7fe5060af7e7c56122d5232f6c3}\label{main1DOr2_8f90_ae72ce7fe5060af7e7c56122d5232f6c3}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!condition\+\_\+lim\+\_\+box@{condition\+\_\+lim\+\_\+box}}
+\index{condition\+\_\+lim\+\_\+box@{condition\+\_\+lim\+\_\+box}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{condition\+\_\+lim\+\_\+box()}{condition\_lim\_box()}}
+{\footnotesize\ttfamily subroutine code2d\+::condition\+\_\+lim\+\_\+box (\begin{DoxyParamCaption}\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx+1)}]{Prim,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Ein,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Pression,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{S\+O\+U\+N\+D\+\_\+ax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_abf21f0faeed0f3974f34fb740d77af75}\label{main1DOr2_8f90_abf21f0faeed0f3974f34fb740d77af75}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!condlimabsorption@{condlimabsorption}}
+\index{condlimabsorption@{condlimabsorption}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{condlimabsorption()}{condlimabsorption()}}
+{\footnotesize\ttfamily subroutine code2d\+::condlimabsorption (\begin{DoxyParamCaption}\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx+1)}]{Prim,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Ein,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Pression,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{S\+O\+U\+N\+D\+\_\+ax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_a41f5497b85eecbbc6af40d3959e67a3d}\label{main1DOr2_8f90_a41f5497b85eecbbc6af40d3959e67a3d}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!cons\+\_\+prediction\+\_\+sub1x@{cons\+\_\+prediction\+\_\+sub1x}}
+\index{cons\+\_\+prediction\+\_\+sub1x@{cons\+\_\+prediction\+\_\+sub1x}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{cons\+\_\+prediction\+\_\+sub1x()}{cons\_prediction\_sub1x()}}
+{\footnotesize\ttfamily subroutine code2d\+::cons\+\_\+prediction\+\_\+sub1x (\begin{DoxyParamCaption}\item[{real (kind = dp)}]{DX,  }\item[{real (kind = dp)}]{DT,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,1\+:nx)}]{C\+O\+NS,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,1\+:nx)}]{C\+O\+N\+S\+\_\+\+P\+R\+ED,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx)}]{F\+L\+U\+X\+GG,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx)}]{F\+L\+U\+X\+DD }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_a47ac97fd58c2f9695ffff2ee98d498c1}\label{main1DOr2_8f90_a47ac97fd58c2f9695ffff2ee98d498c1}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!ecriture\+\_\+donnees@{ecriture\+\_\+donnees}}
+\index{ecriture\+\_\+donnees@{ecriture\+\_\+donnees}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{ecriture\+\_\+donnees()}{ecriture\_donnees()}}
+{\footnotesize\ttfamily subroutine code2d\+::ecriture\+\_\+donnees (\begin{DoxyParamCaption}\item[{real (kind = dp), dimension(1\+:nx)}]{X,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx+1)}]{Prim,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Ein,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Pression,  }\item[{real (kind = dp)}]{time,  }\item[{real (kind = dp)}]{DX,  }\item[{real (kind = dp), dimension(1\+:nx)}]{U1,  }\item[{real (kind = dp)}]{Lx,  }\item[{real (kind = dp), dimension(1\+:nx)}]{Qaverage }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_a61ef0ae28fb906748d601350a093a3fa}\label{main1DOr2_8f90_a61ef0ae28fb906748d601350a093a3fa}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!euler\+\_\+method@{euler\+\_\+method}}
+\index{euler\+\_\+method@{euler\+\_\+method}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{euler\+\_\+method()}{euler\_method()}}
+{\footnotesize\ttfamily subroutine code2d\+::euler\+\_\+method (\begin{DoxyParamCaption}\item[{real (kind = dp)}]{DT,  }\item[{real (kind = dp)}]{time,  }\item[{real (kind = dp), dimension(1\+:nx)}]{X,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,1\+:nx)}]{C\+O\+NS,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx+1)}]{Prim,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Ein,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{S\+O\+U\+N\+D\+\_\+ax,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Pression,  }\item[{integer}]{it,  }\item[{real (kind = dp), dimension(1\+:nx)}]{U1,  }\item[{real (kind = dp), dimension(1\+:nx)}]{Qaverage }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{main1DOr2_8f90_a61ef0ae28fb906748d601350a093a3fa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main1DOr2_8f90_aec66a1d113ade1d60ad864482ea8e4cf}\label{main1DOr2_8f90_aec66a1d113ade1d60ad864482ea8e4cf}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!godunov\+\_\+x\+\_\+sub1@{godunov\+\_\+x\+\_\+sub1}}
+\index{godunov\+\_\+x\+\_\+sub1@{godunov\+\_\+x\+\_\+sub1}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{godunov\+\_\+x\+\_\+sub1()}{godunov\_x\_sub1()}}
+{\footnotesize\ttfamily subroutine code2d\+::godunov\+\_\+x\+\_\+sub1 (\begin{DoxyParamCaption}\item[{real(kind=dp), dimension(nv\+\_\+prim,1\+:nx)}]{cons,  }\item[{real(kind=dp), dimension(nv\+\_\+prim,0\+:nx)}]{flux,  }\item[{real(kind=dp)}]{dt,  }\item[{real(kind=dp)}]{dx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_a86edd837bdc9a015ebd8a46212fe70ab}\label{main1DOr2_8f90_a86edd837bdc9a015ebd8a46212fe70ab}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!hllc\+\_\+x\+\_\+sub1@{hllc\+\_\+x\+\_\+sub1}}
+\index{hllc\+\_\+x\+\_\+sub1@{hllc\+\_\+x\+\_\+sub1}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{hllc\+\_\+x\+\_\+sub1()}{hllc\_x\_sub1()}}
+{\footnotesize\ttfamily subroutine code2d\+::hllc\+\_\+x\+\_\+sub1 (\begin{DoxyParamCaption}\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx+1)}]{prim,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx)}]{flux,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx+1)}]{pente,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,1\+:nx)}]{cons,  }\item[{integer}]{it,  }\item[{real(kind=dp)}]{dt }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main1DOr2_8f90_a86edd837bdc9a015ebd8a46212fe70ab_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main1DOr2_8f90_a2ab28d5afcb8110dd4d60685348cb3d3}\label{main1DOr2_8f90_a2ab28d5afcb8110dd4d60685348cb3d3}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!initialisation@{initialisation}}
+\index{initialisation@{initialisation}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{initialisation()}{initialisation()}}
+{\footnotesize\ttfamily subroutine code2d\+::initialisation (\begin{DoxyParamCaption}\item[{real (kind = dp)}]{DX,  }\item[{real (kind = dp), dimension(1\+:nx)}]{X,  }\item[{real (kind = dp), dimension(nv\+\_\+prim, 0\+:nx+1)}]{Prim,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{S\+O\+U\+N\+D\+\_\+ax,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Ein,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,1\+:nx)}]{C\+O\+NS,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Pression,  }\item[{real (kind = dp)}]{Lx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_a62516b42ea4fb4c0918eb7e43982d4a8}\label{main1DOr2_8f90_a62516b42ea4fb4c0918eb7e43982d4a8}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!lecture\+\_\+donnees@{lecture\+\_\+donnees}}
+\index{lecture\+\_\+donnees@{lecture\+\_\+donnees}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{lecture\+\_\+donnees()}{lecture\_donnees()}}
+{\footnotesize\ttfamily subroutine code2d\+::lecture\+\_\+donnees (\begin{DoxyParamCaption}\item[{real (kind = dp)}]{Lx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_a782814db45b1ac79c2d169964b28fd07}\label{main1DOr2_8f90_a782814db45b1ac79c2d169964b28fd07}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!minmod@{minmod}}
+\index{minmod@{minmod}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{minmod()}{minmod()}}
+{\footnotesize\ttfamily subroutine code2d\+::minmod (\begin{DoxyParamCaption}\item[{real(kind=dp)}]{s1,  }\item[{real(kind=dp)}]{s2,  }\item[{real(kind=dp)}]{slim }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_aa208014933dc346cd26290f44b072d66}\label{main1DOr2_8f90_aa208014933dc346cd26290f44b072d66}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!nouvell\+\_\+variable\+\_\+prim@{nouvell\+\_\+variable\+\_\+prim}}
+\index{nouvell\+\_\+variable\+\_\+prim@{nouvell\+\_\+variable\+\_\+prim}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{nouvell\+\_\+variable\+\_\+prim()}{nouvell\_variable\_prim()}}
+{\footnotesize\ttfamily subroutine code2d\+::nouvell\+\_\+variable\+\_\+prim (\begin{DoxyParamCaption}\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx+1)}]{Prim,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Ein,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{S\+O\+U\+N\+D\+\_\+ax,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,1\+:nx)}]{C\+O\+NS,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Pression,  }\item[{integer}]{it }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_ab1369821f897b816d4e9a8f6740ea693}\label{main1DOr2_8f90_ab1369821f897b816d4e9a8f6740ea693}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!pente1\+\_\+x@{pente1\+\_\+x}}
+\index{pente1\+\_\+x@{pente1\+\_\+x}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{pente1\+\_\+x()}{pente1\_x()}}
+{\footnotesize\ttfamily subroutine code2d\+::pente1\+\_\+x (\begin{DoxyParamCaption}\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx+1)}]{Prim,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx+1)}]{P\+E\+N\+TE }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{main1DOr2_8f90_ab1369821f897b816d4e9a8f6740ea693_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main1DOr2_8f90_a9a3d7ad4173d691f4f090f6c4c4e05b3}\label{main1DOr2_8f90_a9a3d7ad4173d691f4f090f6c4c4e05b3}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!powder@{powder}}
+\index{powder@{powder}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{powder()}{powder()}}
+{\footnotesize\ttfamily subroutine code2d\+::powder (\begin{DoxyParamCaption}\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx+1)}]{Prim,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Ein,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Pression,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{S\+O\+U\+N\+D\+\_\+ax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_a1054c20993438d4f9ef5cc742a3245b4}\label{main1DOr2_8f90_a1054c20993438d4f9ef5cc742a3245b4}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!prim\+\_\+to\+\_\+cons\+\_\+flux\+\_\+sub1x@{prim\+\_\+to\+\_\+cons\+\_\+flux\+\_\+sub1x}}
+\index{prim\+\_\+to\+\_\+cons\+\_\+flux\+\_\+sub1x@{prim\+\_\+to\+\_\+cons\+\_\+flux\+\_\+sub1x}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{prim\+\_\+to\+\_\+cons\+\_\+flux\+\_\+sub1x()}{prim\_to\_cons\_flux\_sub1x()}}
+{\footnotesize\ttfamily subroutine code2d\+::prim\+\_\+to\+\_\+cons\+\_\+flux\+\_\+sub1x (\begin{DoxyParamCaption}\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx+1)}]{Prim,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Ein,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Pression,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,1\+:nx)}]{C\+O\+NS,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx)}]{F\+L\+UX }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_a8a5b072c001df1496416cc96562c9916}\label{main1DOr2_8f90_a8a5b072c001df1496416cc96562c9916}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!putonscreen@{putonscreen}}
+\index{putonscreen@{putonscreen}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{putonscreen()}{putonscreen()}}
+{\footnotesize\ttfamily subroutine code2d\+::putonscreen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_abf018793b221c901580957ed90346b9d}\label{main1DOr2_8f90_abf018793b221c901580957ed90346b9d}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!rk2@{rk2}}
+\index{rk2@{rk2}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{rk2()}{rk2()}}
+{\footnotesize\ttfamily subroutine code2d\+::rk2 (\begin{DoxyParamCaption}\item[{real (kind = dp)}]{DT,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,1\+:nx)}]{C\+O\+NS,  }\item[{real (kind = dp), dimension(nv\+\_\+prim,0\+:nx+1)}]{Prim,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Ein,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{S\+O\+U\+N\+D\+\_\+ax,  }\item[{real (kind = dp), dimension(0\+:nx+1)}]{Pression,  }\item[{integer}]{it,  }\item[{real (kind = dp), dimension(1\+:nx)}]{U1 }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{main1DOr2_8f90_abf018793b221c901580957ed90346b9d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main1DOr2_8f90_a1584e44687072629ab256df4b8fe6537}\label{main1DOr2_8f90_a1584e44687072629ab256df4b8fe6537}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!superbee@{superbee}}
+\index{superbee@{superbee}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{superbee()}{superbee()}}
+{\footnotesize\ttfamily subroutine code2d\+::superbee (\begin{DoxyParamCaption}\item[{real(kind=dp)}]{s1,  }\item[{real(kind=dp)}]{s2,  }\item[{real(kind=dp)}]{slim }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_ac6b2b51b381114cb3bc7fa9abc69dee7}\label{main1DOr2_8f90_ac6b2b51b381114cb3bc7fa9abc69dee7}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!valbada@{valbada}}
+\index{valbada@{valbada}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{valbada()}{valbada()}}
+{\footnotesize\ttfamily subroutine code2d\+::valbada (\begin{DoxyParamCaption}\item[{real(kind=dp)}]{s1,  }\item[{real(kind=dp)}]{s2,  }\item[{real(kind=dp)}]{slim }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_af50a25d9d5f073c1347e643d589770ac}\label{main1DOr2_8f90_af50a25d9d5f073c1347e643d589770ac}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!vleer@{vleer}}
+\index{vleer@{vleer}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{vleer()}{vleer()}}
+{\footnotesize\ttfamily subroutine code2d\+::vleer (\begin{DoxyParamCaption}\item[{real(kind=dp)}]{s1,  }\item[{real(kind=dp)}]{s2,  }\item[{real(kind=dp)}]{slim }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main1DOr2_8f90_a236c2f231e6eabfc3ddff4bc2f56bb99}\label{main1DOr2_8f90_a236c2f231e6eabfc3ddff4bc2f56bb99}} 
+\index{main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}!vmc@{vmc}}
+\index{vmc@{vmc}!main1\+D\+Or2.\+f90@{main1\+D\+Or2.\+f90}}
+\subsubsection{\texorpdfstring{vmc()}{vmc()}}
+{\footnotesize\ttfamily subroutine code2d\+::vmc (\begin{DoxyParamCaption}\item[{real(kind=dp)}]{s1,  }\item[{real(kind=dp)}]{s2,  }\item[{real(kind=dp)}]{slim }\end{DoxyParamCaption})}
+
